@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+      <title>VirtualBase</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="images/logos22.png">
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-social.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark justify-content-between" style="background-color: rgba(0,0,0,);" id="myNavbar">
+            <a class="navbar-brand left" href="#">
+              <img src="images/logos22.png" width="75" height="75" alt="VirtualBase logo">
+            </a>
+            <div>
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#news">Aktualności</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#offer">Oferta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#service">Sprzęt VR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#booking">Rezerwacja</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModalLong" href="#">Regulamin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+          <div class="jumbotron" style="background-color: rgba(0,0,0,0)">
+              <h1 class="display-4">Virtual Base</h1>
+              <hr class="my-4">
+              <h3>Salon gier wirtualnej rzeczywistości</h3>
+              <br>
+              <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#news" role="button">Dowiedz się więcej!</a>
+                <a class="btn btn-outline-primary btn-lg" href="#booking" role="button">Zarezerwuj termin!</a>
+              </p>
+            </div>
+        </div>
+      </header>
+    
+      <section class="news" id="news">
+          <h2>Już wkrótce wielkie otwarcie!</h2>
+          <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h3 class="display-1"><strong>02.02.2018</strong></h3>
+                <hr class="my-4">
+                <p class="display-4" id="demo"></p>
+              </div>
+        </div>
+      
+      </section>
+
+      <section class="offer" id="offer">
+          <div class="container">
+              <h2>Nasza oferta!</h2>
+              <br>
+              <table class="table table-striped">
+                <tr>
+                    <td>30 minut grania</td>
+                    <td>20 zł / *15 zł</td>
+                </tr>
+                <tr>
+                    <td>60 minut grania</td>
+                    <td>38 zł / *29 zł</td>
+                </tr>
+                <tr>
+                    <td>Karnet: 6 wejść po 30 minut grania</td>
+                    <td>98 zł / *75 zł</td>
+                </tr>
+                <tr>
+                    <td>Karnet: 12 wejść po 60 minut grania</td>
+                    <td>196 zł / *150 zł</td>
+                </tr>
+              </table>
+              <p style="text-align: right"><small class="text-muted">*dotyczy uczniów, studentów do 26 roku życia oraz Absolwentów UMK za okazaniem ważnej legitymacji</small></p>
+              
+              <p style="text-align: center;padding-top: 100px;"><a href="#contact"><strong>Skontaktuj się</strong></a> z nami, jeśli chcesz zorganizować imprezę!</p>
+          </div>
+      </section>
+        
+      <section class="service" id="service">
+          <div class="container">
+              <h2>Sprzęt, którym dysponujemy!</h2>
+              
+              
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pasue="true">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="card mb-3">
+                          <img class="card-img-top" src="images/ps4.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Konsole Sony Playstation 4 VR</h5>
+                            <p class="card-text">Konsola najnowszej generacji umożliwiająca wirtualną rozgrywkę!</p>
+                            
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card mb-3">
+                          <img class="card-img-top" src="images/gogle.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Gogle SONY Playstation VR</h5>
+                            <p class="card-text">To dzięki nim będziecie w stanie doświadczać "pobytu" w wirtualnym świecie!</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                          <img class="card-img-top" src="images/cntrolls.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Kontrolery SONY Playstation Move</h5>
+                            <p class="card-text">Dla doświadczenia jeszcze głebszej immersji! <small class="text-muted">(trochę ruchu zawsze się przyda :P)</small></p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                          <img class="card-img-top" src="images/tv.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Monitory SONY CECH ZE1D4E</h5>
+                            <p class="card-text">Zaloguj się, wybierz grę, załóż gogle i odkryj arkana wirtualnej przygody!</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" style="color: #222;" aria-hidden="true"></span>
+                    <span class="sr-only">Poprzedni</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Następny</span>
+                  </a>
+            </div>
+              
+              
+          </div>
+      </section>
+      
+      <section class="booking" id="booking">
+        <div class="container">
+            <h2>Zarezerwuj termin!</h2>
+            <p style="text-align: center;padding-top: 75px;"  class="lead">Sprawdź wolne terminy!</p>
+            <form id="termin">
+            <div class="row" style="padding-top: 50px;">
+                
+                <div class="col-sm">
+                    <label for="datepicker">Wybierz datę:</label>
+                    <p><input type="text" class="form-control" id="datepicker" required></p>
+                </div>
+                <div class="col-sm">
+                    <label for="hourpicker">Wybierz godzinę:</label>
+                    <p><select class="custom-select" id="hourpicker">
+                        <option selected value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                      </select></p>
+                </div>
+                <div class="col-sm">
+                    <label for="hourpicker">Jak długo chcesz grać?</label>
+                    <p><select class="custom-select" id="time">
+                        <option selected value="30 minut">30 minut</option>
+                        <option value="60 minut">1 godzinę</option>
+                        </select></p>
+                </div>
+                
+                <div class="col-sm">
+                    <label for="checkchin">&nbsp;</label>
+                    <p><button type="submit" class="btn btn-success" id="checkchin">Sprawdź dostępność</button></p>
+                </div>
+                
+            </div>
+            </form>
+            <div class="alert alert-success hide-me" role="alert" id="gites">
+              Ten termin jest wolny!
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="sign-in" style="margin-left: 50px;">
+                  Zapisz się!
+                </button>
+            </div>
+          </div>
+      </section>
+  
+    
+      <section class="contact" id="contact">
+          <div class="container">
+              <h2>Zadzwoń lub Napisz do nas!</h2>
+              <div class="row" style="padding-top: 100px">
+                  <div class="col-sm">
+                      <ul class="list-group">
+                          <li class="list-group-item">891-531-925</li>
+                          <li class="list-group-item">Virtual Base</li>
+                          <li class="list-group-item">Gagarina 152</li>
+                          <li class="list-group-item">87-100 Toruń</li>
+                      </ul>
+                      <p>
+                      <a class="btn btn-block btn-social btn-facebook" style="margin-top: 112px; width:300px;border-radius:6px;"
+                         href="https://www.facebook.com/Virtual-Base-457938604608640/" target="_blank">
+                        <span class="fa fa-facebook" aria-hidden="true" style="padding: 7px"></span> Polub nas na Facebooku!
+                      </a></p>
+                  </div>
+                  <div class="col-sm">
+                      <form id="msg-form">
+                          <div class="form-group">
+                              <input type="email" class="form-control" id="email" placeholder="adres@email.pl" required>
+                          </div>
+
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="subject" placeholder="Imię" required>
+                          </div>
+
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="phone" placeholder="Numer Telefonu" required>
+                          </div>
+                          
+                          <div class="form-group">
+                              <textarea class="form-control" id="message" rows="4" placeholder="Treść Wiadomości" required></textarea>
+                          </div>
+                          <div class="form-group"></div>
+                            <div class="alert alert-success hide-me" role="alert" id="msg-sent">
+                              Wiadomość została wysłana!
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                               </button>
+                            </div>
+                          <div class="form-group">
+                              <button type="submit" class="btn btn-primary mb-2" id="send-msg">Wyslij zgłoszenie</button>
+                          </div>
+                      </form>
+                    </div>
+            
+              </div>
+          <!-- container -->
+          </div>
+      </section>
+    
+      <footer class="footer" style="background-color: #212529;">
+          <div class="container" style="text-align: center;color: #f8f9fa;"><small>&copy; Aleksandra Szczesna 2018</small></div>
+      </footer>
+        
+        
+    <!-- modal zapis -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Wyślij rezerwację</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <form id="finisher">
+          <div class="modal-body">
+          
+            
+                <div class="form-group">
+                  <label for="static-date">Dzień:</label>
+                  <input type="text" readonly class="form-control" id="static-date" value="">
+                </div>
+                <div class="form-group">
+                  <label for="static-hour">Godzina:</label>
+                  <input type="text" readonly class="form-control" id="static-hour" value="">
+                </div>
+                <div class="form-group">
+                  <label for="static-time">Czas gry:</label>
+                  <input type="text" readonly class="form-control" id="static-time" value="">
+                </div>
+                <div class="form-group">
+                  <label for="ticket">Rodzaj biletu</label>
+                    <select class="custom-select" id="ticket">
+                      <option value="normalny">normalny</option>
+                      <option value="ulgowy">ulgowy</option>
+                      <option value="karnet">Mam karnet!</option>
+                      <option selected value="voucher">Mam 6 naklejek!</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                  <label for="static-time">Podaj swój adres e-mail:</label>
+                  <input type="email" class="form-control" id="static-email" placeholder="adres@email.pl" required>
+                </div>
+                <div class="form-group">
+                  <label for="pay">Do zapłaty: <small class="text-muted"><br>(płatność podczas wizyty)</small></label>
+                  <div id="pay" style="font-weight: 900;"></div>
+                
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                      <label class="form-check-label" for="gridCheck">
+                        Potwierdzam poprawność powyższych danych.
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck2" required>
+                      <label class="form-check-label" for="gridCheck2">
+                        Potwierdzam, że zapoznałem się z regulaminem Salonu Gier Wirtualnej Rzeczywistości Virtual Base.
+                      </label>
+                  </div>
+                  
+                </div>
+                <div class="alert alert-success" role="alert" id="submitted">
+                    <p>Rezerwacja została wysłana!<br>nr rezerwacji: <span id="book-nr" style="font-weight: 900"></span><br>Do zobaczenia!
+                    <br><small class="text-muted"><strong>Pamiętaj</strong>, jeśli to Twoje pierwsze wejście, przyjdź co najmniej <strong>15 minut wcześniej</strong>!</small></p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closer">Wyjdź</button>
+            <button type="submit" class="btn btn-primary" id="accept">Potwierdź</button>
+          </div>
+        </form> 
+        </div>
+      </div>
+    </div>    
+    
+    
+    <!-- Modal regulamin-->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Regulamin salonu gier wirtualnej rzeczywistości VIRTUAL BASE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol style="padding-left: 20px;">
+                <li>
+                    <p>Salon udostępnia stanowiska pozwalające skorzystać ze sprzętu i oprogramowania wirtualnej rzeczywistości.</p>
+                </li>
+                <li>
+                    <p>Zasady obowiązujące w salonie określa niniejszy regulamin.</p>
+                </li>
+                <li>
+                    <p>Salon jest otwarty 7 dni w tygodniu: od poniedziałku do czwartku w godzinach <br>14-20, od piątku do soboty w godzinach 14-22, w niedziele w godzinach 14-18.</p>
+                </li>
+                <li>
+                    <p>Skorzystanie z oferty salonu jest możliwe w godzinach jego otwarcia.</p>
+                </li>
+                <li>
+                    <p>Korzystanie z oferty salonu jest odpłatne zgodnie z cennikiem zamieszczonym na stronie internetowej www.virtualbase.pl oraz w siedzibie.</p>
+                </li>
+                <li>
+                    <p>Osoba zainteresowana skorzystaniem z oferty salonu jest zobowiązana zapoznać się z niniejszym regulaminem oraz Ostrzeżeniem Dotyczącym Zdrowia i Bezpieczeństwa przed pierwszym użyciem sprzętu.</p>
+                </li>
+                <li>
+                    <p>Wykupienie usługi i przystąpienie do korzystania ze sprzętu jest równoznaczne oświadczeniem o zapoznaniu się i zaakceptowaniu niniejszego regulaminu.</p>
+                </li>
+                <li>
+                    <p>Klient korzystający ze sprzętu oświadcza, że nie posiada żadnych przeciwwskazań zdrowotnych do użytkowania urządzeń.</p>
+                </li>
+                <li>
+                    <p>Z usług salonu mogą korzystać osoby powyżej 13 roku życia.</p>
+                </li>
+                <li>
+                    <p>Osoby, które ukończyły 16 rok życia korzystają z usług salonu na własną odpowiedzialność.</p>
+                </li>
+                <li>
+                    <p>Osoby w wieku poniżej 16 lat mogą korzystać ze sprzętu w obecności opiekunów za nich odpowiedzialnych lub samodzielnie po dostarczeniu do salonu pisemnej zgody opiekuna (wzór dostępny poniżej).</p>
+                </li>
+                <li>
+                    <p>Korzystanie ze sprzętu wirtualnej rzeczywistości oddziałuje na błędnik, zmysł wzroku, orientacji przestrzennej, słuchu, co może skutkować pojawieniem się tzw. choroby po symulacyjnej, ataku epilepsji oraz innych objawów, które dokładnie opisane są w Ostrzeżeniu Dotyczącym Zdrowia i Bezpieczeństwa.</p>
+                </li>
+                <li>
+                    <p>Salon nie ponosi jakiejkolwiek odpowiedzialności za skutki lub powikłania spowodowane korzystaniem z usług.</p>
+                </li>
+                <li>
+                    <p>W razie pojawienia się nietypowych objawów należy natychmiast przerwać korzystanie ze stanowiska.</p>
+                </li>
+                <li>
+                    <p>Klient korzystający ze sprzętu jest za niego odpowiedzialny. Za wszelkie uszkodzenia sprzętu wynikające z jego nieprawidłowego użytkowania odpowiedzialna jest osoba z niego korzystająca. Salon ma w takim wypadku prawo domagać się rekompensaty za spowodowane uszkodzenia oraz czas, w którym urządzenie nie będzie mogło być wykorzystywane.</p>
+                </li>
+                <li>
+                    <p>Obiekt jest monitorowany, a nagrania utrwalane na nośniku danych. W razie konfliktu możliwe jest wykorzystanie nagrań przez salon.</p>
+                </li>
+                <li>
+                    <p>Możliwe jest dokonanie rezerwacji terminu skorzystania z usługi osobiście w salonie, telefonicznie, e-mailowo lub przez formularz dostępny na stronie internetowej.</p>
+                </li>
+                <li>
+                    <p>Klient podczas rezerwacji ustala godzinę rozpoczęcia symulacji oraz czas jej trwania. Po jej zakończeniu możliwe jest przedłużenie czasu w przypadku gdy nie ma w tym czasie innej rezerwacji oraz po uiszczeniu opłaty za dodatkowy czas.</p>
+                </li>
+                <li>
+                    <p>Rezerwacja jest utrzymywana przez 10 minut od ustalonego czasu. Po tym czasie przepada i inni klienci mogą skorzystać z danego stanowiska. Zaleca się przybycie od 5 do 10 minut przez ustalonym terminem rezerwacji.</p>
+                </li>
+                <li>
+                    <p>Możliwe jest skorzystanie z usług bez rezerwacji jeśli aktualnie są dostępne wolne stanowiska nieposiadające rezerwacji na minimum najbliższe 30 minut.</p>
+                </li>
+                <li>
+                    <p>Salon nie odpowiada za przedmioty pozostawione bez opieki przez osoby korzystające z usług salonu.</p>
+                </li>
+                <li>
+                    <p>Osoby znajdujące się w salonie i korzystające z dostępnych usług są zobowiązane do przestrzegania niniejszego regulaminu oraz stosowania się do poleceń obsługi salonu.</p>
+                </li>
+                <li>
+                    <p>W przypadku nieprzestrzegania regulaminu salonu możliwe jest przedwczesne zakończenie symulacji bez możliwości otrzymania rekompensaty.</p>
+                </li>
+                
+            </ol>
+              
+            <p><a href="images/zgoda.PNG" target="_blank">Zgoda opiekuna na korzystanie z salonu gier wirtualnej rzeczywistości Virtual Base</a></p>
+              
+            <h5 class="modal-title" id="exampleModalLongTitle2">Ostrzeżenie Dotyczące Zdrowia i Bezpieczeństwa</h5>
+            <ol style="padding-left: 20px;">
+                <li>
+                    <p>U niektórych osób (około 1 na 4000) mogą wystąpić poważne zawroty głowy, napady, ataki epilepsji lub zamroczenia wyzwalane błyskami światła lub wzorami. Wspomniane objawy mogą wystąpić podczas oglądania telewizji, w trakcie grania w grę wideo lub w trakcie doświadczania wirtualnej rzeczywistości, nawet jeśli schorzenia te nie wystąpiły u danej osoby w przeszłości. Napady takie występują częściej u dzieci i młodzieży w wieku do lat 20. Każda osoba, która doświadczyła któregokolwiek ze wspomnianych objawów powinna przerwać używanie urządzenia oraz skonsultować się z lekarzem. Każdy, kto w przeszłości doświadczył ataku drgawek, utraty świadomości lub innego objawu podobnego do epilepsji powinien udać się do lekarza przed rozpoczęciem używania urządzenia.</p>
+                </li>
+                <li>
+                    <p>Urządzenia należy używać wyłącznie w bezpiecznym otoczeniu – stwarza wrażenie wirtualnej rzeczywistości, które odwraca uwagę i całkowicie hamuje odbiór otaczającej rzeczywistości.</p>
+                </li>
+                <li>
+                    <p>Przed jak i podczas korzystania z urządzeń należy zawsze zwracać uwagę na najbliższe otoczenie. W celu uniknięcia wystąpienia urazów należy zachować ostrożność.</p>
+                </li>
+                <li>
+                    <p>Używanie urządzeń wirtualnej rzeczywistości może powodować utratę równowagi. Należy pamiętać, że przedmioty widziane w wirtualnej rzeczywistości nie istnieją w rzeczywistym świecie, dlatego też nie należy na nich siadać, stawać ani używać jako oparcia.</p>
+                </li>
+                <li>
+                    <p>Należy pamiętać, że podczas używania urządzeń wirtualnej rzeczywistości użytkownik jest nieświadomy tego, że inni ludzie mogą pojawić się w jego najbliższym otoczeniu.</p>
+                </li>
+                <li>
+                    <p>Należy natychmiast przerwać stosowanie urządzeń wirtualnej rzeczywistości, jeśli przy ich użyciu osoba doświadcza któregokolwiek z następujących objawów: napadów drgawkowych; utraty świadomości; zmęczenia oczu; drgania oczu lub mięśni; mimowolnych ruchów; zmienionego, niewyraźnego lub podwójnego widzenia lub innych wizualnych nieprawidłowości; zawrotów głowy; dezorientacji; zaburzeń równowagi; zaburzeń koordynacji wzrokowo – ruchowej; nadmiernego pocenia się; nadmiernego ślinienia się; nudności; zawrotów głowy; dyskomfortu, bólu głowy lub oczu; senności; zmęczenia; lub jakichkolwiek objawów podobnych do choroby lokomocyjnej.</p>
+                </li>
+                <li>
+                    <p>Podobnie jak w przypadku objawów, które mogą być odczuwane po zejściu ze statku morskiego, objawy wynikające z bycia narażonym na oddziaływanie wirtualnej rzeczywistości mogą utrzymywać się przez dłuższy czas oraz ujawniać się dopiero po kilku godzinach. Wspomniane objawy mogą mieć postać wymienionych powyżej symptomów, jak również mogą przejawiać się w nadmiernej senności i zmniejszonej koncentracji. Objawy te mogą zwiększać ryzyko doznania urazu w świecie rzeczywistym.</p>
+                </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+        
+        
+    </body>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $("#termin").submit(function(e){
+           return false;
+        });
+        
+        $("#checkchin").click(function(){
+            if ($("#datepicker").val() != "") {
+                $("#gites").show();
+            }
+        });
+        
+        function check_params(static_time) {
+                var ticket = $("#ticket").val();
+                if (static_time == "30 minut" && ticket == "normalny"){
+                    $("#pay").text("20 zł");
+                } else if (static_time == "30 minut" && ticket == "ulgowy"){
+                    $("#pay").text("15 zł");
+                } else if (static_time == "30 minut" && ticket == "karnet" || ticket == "voucher"){
+                    $("#pay").text("0 zł");
+                }
+                else if (static_time == "60 minut" && ticket == "normalny"){
+                    $("#pay").text("38 zł");
+                } else if (static_time == "60 minut" && ticket == "ulgowy"){
+                    $("#pay").text("29 zł");
+                } else if (static_time == "60 minut" && ticket == "karnet" || ticket == "voucher"){
+                    $("#pay").text("0 zł");
+                }
+        }
+        
+        $("#sign-in").click(function() {
+            
+            var datepicker = $("#datepicker").val();
+            var hourpicker = $("#hourpicker").val();
+            var time = $("#time").val();
+            
+            
+            $("#static-date").val(datepicker);
+            $("#static-hour").val(hourpicker);
+            $("#static-time").val(time);
+            
+            var static_time = $("#static-time").val();
+            
+            //zmiana typu biletu wpływa na cenę
+            $("#ticket").change(function(){
+              check_params(static_time);
+            });
+        });
+        
+        $("#finisher").submit(function(){
+           return false; 
+        });
+        
+        $("#accept").click(function(){
+            if($("#static-email").val() != 0 && $("#gridCheck").is(":checked") && $("#gridCheck2").is(":checked")){
+                var nr = Math.floor((Math.random() * 9999) + 1000);
+                var num = nr.toString();
+                $("#book-nr").text(num+"2018");
+                $("#submitted").show().go;
+            }
+        });
+        
+        $("#closer").click(function(){
+           location.reload();
+        });
+        
+        $("#msg-form").submit(function(){
+           return false; 
+        });
+        
+        $("#send-msg").click(function(){
+            if($("#email").val() != "" && $("#subject").val() != 0 && $("#phone") != 0 && $("#message").val() != 0) {
+                $("#msg-sent").show();
+            } 
+        });
+        
+                   
+    </script>
+    <script>
+        // Add scrollspy to <body>
+        $('body').scrollspy({target: ".navbar", offset: 50});
+
+        // Add smooth scrolling on all links inside the header
+        $("header a, .offer a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+
+          } // End if
+
+        });
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 2, 2018 14:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get todays date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          // If the count down is finished, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "JUŻ OTWARTE!!!";
+          }
+        }, 1000);
+    </script>
+
+    <script>
+          $( function() {
+            $( "#datepicker" ).datepicker();
+          } );
+
+          $('#myModal').on('shown.bs.modal', function () {
+              $('#myInput').trigger('focus')
+          })
+   </script>
+</html>

@@ -1,0 +1,262 @@
+/* MAIN COLOR: #2980b9 */
+/* odcien #20638f */
+
+/*------------------------------------------------*/
+/* BASIC SETUP */
+/*-----------------------------------------------*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: #fff;
+    color: #444;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+/*    text-rendering: optimizeLegibility;*/
+/*    overflow-x: hidden;*/
+}
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-----------------------------------------------*/
+
+section {
+    padding: 80px 0;
+}
+.box{
+    padding: 1%;
+}
+
+/*-----------HEADINGS-----------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    color: #fff;
+    
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #2980b9;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/*--------------------------------------------------------*/
+/*      HEADER         */
+/*--------------------------------------------------------*/
+
+header {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))),url(images/bg.jpg);
+    background-image: linear-gradient(rgba(32, 99, 143, 0.3),rgba(41, 128, 185, 0.7)),url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;              /*viewport 100%*/
+    background-attachment: fixed;
+}
+header .jumbotron {
+    position: relative;
+    top: 150px;
+}
+
+/*--------------------------------------------------------*/
+/*      NEWS        */
+/*--------------------------------------------------------*/
+
+.news .jumbotron{
+    background-color: #fff;
+    text-align: center;
+}
+.news h3 {
+    color: #444;
+ }
+
+
+/*--------------------------------------------------------*/
+/*     OFFER      */
+/*--------------------------------------------------------*/
+
+.offer {
+    background-color: rgba(230,230,230,0.3);
+}
+
+
+/*--------------------------------------------------------*/
+/*      SERVICES     */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/*      BOOK      */
+/*--------------------------------------------------------*/
+#submitted {
+    display: none;
+}
+
+.booking {
+    background-color: rgba(230,230,230,0.3);
+}
+.ui-datepicker {
+	background-color: #fff;
+	border: 1px solid #66AFE9;
+	border-radius: 4px;
+	box-shadow: 0 0 8px rgba(102,175,233,.6);
+	display: none;
+	margin-top: 4px;
+	padding: 10px;
+	width: 240px;
+}
+.ui-datepicker a,
+.ui-datepicker a:hover {
+	text-decoration: none;
+}
+.ui-datepicker a:hover,
+.ui-datepicker td:hover a {
+	color: #2A6496;
+	-webkit-transition: color 0.1s ease-in-out;
+	   -moz-transition: color 0.1s ease-in-out;
+	     -o-transition: color 0.1s ease-in-out;
+	        transition: color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-header {
+	margin-bottom: 4px;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title {
+	font-weight: 700;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	cursor: default;
+	font-family: 'Glyphicons Halflings';
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: normal;
+	height: 20px;
+	line-height: 1;
+	margin-top: 2px;
+	width: 30px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	float: left;
+	text-align: left;
+}
+.ui-datepicker .ui-datepicker-next {
+	float: right;
+	text-align: right;
+}
+.ui-datepicker .ui-datepicker-prev:before {
+	content: "\e079";
+}
+.ui-datepicker .ui-datepicker-next:before {
+	content: "\e080";
+}
+.ui-datepicker .ui-icon {
+	display: none;
+}
+.ui-datepicker .ui-datepicker-calendar {
+  table-layout: fixed;
+	width: 100%;
+}
+.ui-datepicker .ui-datepicker-calendar th,
+.ui-datepicker .ui-datepicker-calendar td {
+	text-align: center;
+	padding: 4px 0;
+}
+.ui-datepicker .ui-datepicker-calendar td {
+	border-radius: 4px;
+	-webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+	   -moz-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+	     -o-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+	        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-calendar td:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-calendar td a {
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-current-day {
+	background-color: #4289cc;
+}
+.ui-datepicker .ui-datepicker-current-day a {
+	color: #fff
+}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-unselectable:hover {
+	background-color: #fff;
+	cursor: default;
+}
+
+.hide-me {
+    display: none;
+}
+
+/*--------------------------------------------------------*/
+/*      CONTACT      */
+/*--------------------------------------------------------*/
+
+
+.form-group {float: center;}
+.btn-facebook {
+	  background: #3B5998;
+	  border-radius: 0;
+	  color: #fff !important;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #263961; 
+	}
+.btn-facebook:link, .btn-facebook:visited {
+  color: #fff;
+}
+.btn-facebook:active, .btn-facebook:hover {
+  background: #263961;
+  color: #fff !important;
+}
+i .fa {
+    font-family: fontawesome !important;
+}
+
+
+.footer {
+    padding: 20px 0;
+}
